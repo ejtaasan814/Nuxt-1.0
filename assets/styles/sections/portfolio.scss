@@ -9,35 +9,31 @@
     color:white;
     letter-spacing: 0.60rem;
 }
-.portfolio-box-container{
-    display: flex;
-    flex-direction: row;
-    @media only screen and (max-width: 900px) {
-        flex-direction: column;      
-    }
-}
-.portfolio-box-container .portfolio-box{
-    margin: 10px;
-    width: 100%;
-    padding: 10px;
+.portfolio-box{
+    width: 95%;
     border-radius: 10px;
     // background: rgba(247, 247, 247, 0.84);
-    background: #282936cf;
+    background: rgba(28, 28, 28, 1);
     box-shadow: 20px 17px 20px 0px #000000cc;
     color:white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
-.portfolio-box-container .portfolio-box h5{
-    text-align:center;
-    padding-top: 10px;
+.portfolio-box h5{
+    text-align: center;
 }
 .portfolio-image{
-    height: 200px;
+    height: 250px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 15px;
+
 }
 .portfolio-image img{
-    max-width: 250px;
+    max-width: 100%;
     transition: transform .2s;
     cursor: pointer;
 }

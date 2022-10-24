@@ -22,7 +22,6 @@
                 Download CV</button>
             </div>
 
-
         </b-container>
     </div>   
-</template> 
+</template>
