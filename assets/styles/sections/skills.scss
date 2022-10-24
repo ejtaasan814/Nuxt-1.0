@@ -1,0 +1,62 @@
+.skills-container{
+    width: 100%;
+    padding: 4rem 0rem 4rem 0rem;
+    background: black url('~/static/uploads/skills.jpeg') no-repeat;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.skills-container h1{
+    padding: 2rem;
+    text-align: center;
+    color:white;
+    letter-spacing: 0.60rem;
+}
+.skills-box-container{
+    display: flex;
+    flex-direction: row;
+    @media only screen and (max-width: 900px) {
+        flex-direction: column;      
+    }
+}
+.skills-box-container .skills-box{
+    margin: 10px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    background: rgba(190, 188, 188, 0.93);
+    // background: rgba(247, 247, 247, 0.91);
+    box-shadow: 20px 17px 20px 0px #000000cc;
+}
+.skills-box-container .skills-box h5{
+    margin-top:10px;
+    text-align:center;
+}
+.skills-box-container .skills-box .exp-text{
+    line-height: 2px;
+    text-align:center;
+    font-size: 0.80rem;
+}
+
+
+.skills-img-container{
+    padding-top: 10px;
+}
+.skills-img{
+    text-align: center;
+    padding: 5px;
+    transition: transform .2s;
+    cursor: pointer;
+}
+.skills-img:hover{
+    transform: scale(1.5);
+}
+.skills-img img{
+    height: 3rem;
+    max-width: 100%;
+}   
+.skills-img p{
+    font-size: 13px;
+}
