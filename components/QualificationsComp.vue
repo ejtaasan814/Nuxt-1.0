@@ -1,5 +1,5 @@
 <template>
-    <div class="qualifications-container">
+    <section data-section="qualifications" class="qualifications-container">
         <b-container> 
             <b-row>
                 <h1>Qualifications</h1>
@@ -12,7 +12,13 @@
                 <b-col md="6" cols="12">
                     <p>Work History</p>
                 </b-col>
-            </b-row>
+
+                <ul>
+                    <li v-for="user in users" :key="user.id">
+                        {{ user }}
+                    </li>
+                </ul>
+            </b-row>    
 
             <div class="download-btn">
                 <button class="button-download">
@@ -23,5 +29,29 @@
             </div>
 
         </b-container>
-    </div>   
+    </section>   
 </template>
+<script>
+
+export default {
+    props: {
+       passdata: {
+         type: Object,
+         required: true
+       }
+     },
+    data(){
+        return {
+            users: ''
+        }
+    },
+    async mounted() {
+        try{
+            const response = await this.$axios.get('https://reqres.in/api/users?page=2');
+            this.users = response.data.data;
+        }catch(error){
+            this.users = error;
+        }
+    }
+    }
+</script>

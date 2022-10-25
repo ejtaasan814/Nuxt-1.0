@@ -1,5 +1,5 @@
 <template>
-    <div class="about-container">
+    <section data-section="about" class="about-container">
         <b-container> 
             <b-row>
                 <h1>About Me</h1>
@@ -13,5 +13,17 @@
             </b-row>
 
         </b-container>
-    </div>   
+    </section>   
 </template> 
+<script>
+export default {
+
+    props: {
+       passdata: {
+         type: Object,
+         required: true
+       }
+     }
+
+    }
+</script>

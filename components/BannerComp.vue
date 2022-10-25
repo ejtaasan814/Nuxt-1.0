@@ -1,5 +1,5 @@
 <template>
-    <div class="banner-container">
+    <section data-section="banner" class="banner-container">
         <b-container>
             <div class="banner-content">
                 <b-row>
@@ -27,7 +27,7 @@
                 </b-row>
             </div>
         </b-container>  
-    </div>
+    </section>
 </template>
 
 <script>

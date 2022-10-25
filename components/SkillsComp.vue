@@ -1,5 +1,5 @@
 <template>
-    <div class="skills-container">
+    <section data-section="qualifications" class="skills-container">
         <b-container>
             <b-row>
                <h1>Skills</h1>
@@ -77,6 +77,10 @@
                                     <img src="https://seeklogo.com/images/G/github-logo-5F384D0265-seeklogo.com.png" />
                                     <p>GIT</p>
                             </b-col>
+                            <b-col md="4" cols="3" class="skills-img">
+                                    <img src="https://seeklogo.com/images/D/docker-logo-CF97D0124B-seeklogo.com.png" />
+                                    <p>Docker</p>
+                            </b-col>
                         </b-row>
                     </div> 
                 </div>
@@ -86,7 +90,7 @@
 
             </div>
         </b-container>  
-    </div>
+    </section>
 </template>
 
 <script>
