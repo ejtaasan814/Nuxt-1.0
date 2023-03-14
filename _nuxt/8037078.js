@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{386:function(e,n,t){"use strict";t.r(n);var o={props:{passdata:{type:Object,required:!0}}},r=t(47),component=Object(r.a)(o,(function(){var e=this,n=e._self._c;return n("div",[n("div",[n("h4",[e._v(" None Component")]),e._v(" "),n("pre",[e._v(e._s(e.passdata))])])])}),[],!1,null,null,null);n.default=component.exports}}]);
